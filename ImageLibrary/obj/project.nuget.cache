@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "064KG47qPA23B+ByNOHN6gpEKNCfqLc7NZRcHH7I45KDbExoswtYCZ0462qXRYKeI3HVUPaW2sebQWRtWny/Tw==",
+  "dgSpecHash": "+01vqriYu8o+z6ujJMGI2P86Ar9Kdd6hkrD8hRRwBVM2mEcTfbVwWAIGbNBZzOgE8CcV6g779ej0w1r422ik+w==",
   "success": true,
-  "projectFilePath": "C:\\Classes\\cs341\\ImageApp\\ImageLibrary\\ImageLibrary.fsproj",
+  "projectFilePath": "D:\\GitHub\\CS-341-Proj-2\\ImageLibrary\\ImageLibrary.fsproj",
   "expectedPackageFiles": [
-    "C:\\Users\\joe\\.nuget\\packages\\fsharp.core\\6.0.2\\fsharp.core.6.0.2.nupkg.sha512"
+    "C:\\Users\\kaito\\.nuget\\packages\\fsharp.core\\7.0.400\\fsharp.core.7.0.400.nupkg.sha512"
   ],
   "logs": []
 }

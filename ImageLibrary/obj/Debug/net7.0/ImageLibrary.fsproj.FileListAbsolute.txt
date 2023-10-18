@@ -1,0 +1,11 @@
+D:\GitHub\CS-341-Proj-2\ImageLibrary\bin\Debug\net7.0\ImageLibrary.deps.json
+D:\GitHub\CS-341-Proj-2\ImageLibrary\bin\Debug\net7.0\ImageLibrary.dll
+D:\GitHub\CS-341-Proj-2\ImageLibrary\bin\Debug\net7.0\ImageLibrary.pdb
+D:\GitHub\CS-341-Proj-2\ImageLibrary\obj\Debug\net7.0\ImageLibrary.fsproj.AssemblyReference.cache
+D:\GitHub\CS-341-Proj-2\ImageLibrary\obj\Debug\net7.0\ImageLibrary.AssemblyInfoInputs.cache
+D:\GitHub\CS-341-Proj-2\ImageLibrary\obj\Debug\net7.0\ImageLibrary.AssemblyInfo.fs
+D:\GitHub\CS-341-Proj-2\ImageLibrary\obj\Debug\net7.0\ImageLibrary.fsproj.CoreCompileInputs.cache
+D:\GitHub\CS-341-Proj-2\ImageLibrary\obj\Debug\net7.0\ImageLibrary.dll
+D:\GitHub\CS-341-Proj-2\ImageLibrary\obj\Debug\net7.0\refint\ImageLibrary.dll
+D:\GitHub\CS-341-Proj-2\ImageLibrary\obj\Debug\net7.0\ImageLibrary.pdb
+D:\GitHub\CS-341-Proj-2\ImageLibrary\obj\Debug\net7.0\ref\ImageLibrary.dll
