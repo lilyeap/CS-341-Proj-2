@@ -1,4 +1,5 @@
-// Work on your solution here
+// Lily Eap
+// PPM image configurations program
 
 // Do not change the API (module/namespace/function signatures)
 
@@ -35,7 +36,12 @@ module Operations =
                          (height:int)
                          (depth:int)
                          (image:(int*int*int) list list) = 
-    image
+    let rec reverseRows image =
+      match image with
+      | [] -> []
+      | row :: rest -> List.rev row :: reverseRows rest
+
+    reverseRows image
 
 
   
@@ -46,10 +52,24 @@ module Operations =
                (threshold:int) = 
     image
 
-
+ 
   let rec RotateRight90 (width:int)
                         (height:int)
                         (depth:int)
                         (image:(int*int*int) list list) = 
-    image
+    let rec transpose image =
+      match image with
+      | [] -> []
+      | [] :: _ -> []
+      | _ ->
+          let heads = List.map (function [] -> None | x :: _ -> Some x) image |> List.choose id
+          let tails = List.map (function [] -> None | _ :: xs -> Some xs) image |> List.choose id
+          heads :: transpose tails
+    let rec reverseRows image =
+      match image with
+      | [] -> []
+      | row :: rest -> List.rev row :: reverseRows rest
+
+    transpose image |> reverseRows
+
 
