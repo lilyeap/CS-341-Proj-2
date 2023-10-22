@@ -1,6 +1,11 @@
-// Lily Eap
-// PPM image configurations program
+//
+// Project Name Image processing in F#
+// Project Description F# function library to perform image operations
+// Name Lily Eap
+// Netid 676977984
+// Date 10/28/2023
 
+//
 // Do not change the API (module/namespace/function signatures)
 
 // Refer to the PDF for more instructions on how to implement
@@ -17,8 +22,7 @@ module Operations =
                     (height:int) 
                     (depth:int) 
                     (image:(int*int*int) list list) = 
-    
-    image
+    image |> List.map (fun row -> row |> List.map (fun (r, g, b) ->  (int (float r * 0.299 + float g * 0.587 + float b * 0.114), int (float r * 0.299 + float g * 0.587 + float b * 0.114), int (float r * 0.299 + float g * 0.587 + float b * 0.114))))
 
 
   
@@ -27,8 +31,10 @@ module Operations =
                     (depth:int)
                     (image:(int*int*int) list list)
                     (threshold:int) = 
-    
-    image
+    let checkPixel (pix: int) =
+      if pix > threshold then 255 else 0
+    image |> List.map (fun row -> row |> List.map (fun (r, g, b) ->  (checkPixel r, checkPixel g, checkPixel b)))
+
 
 
   
