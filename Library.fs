@@ -35,7 +35,7 @@ module Operations =
       if pix > threshold then 255 else 0
     image |> List.map (fun row -> row |> List.map (fun (r, g, b) ->  (checkPixel r, checkPixel g, checkPixel b)))
 
-
+  // test
 
   
   let rec FlipHorizontal (width:int)
