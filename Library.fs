@@ -68,14 +68,23 @@ module Operations =
       | row :: next -> List.rev row :: reverseRows next
     reverseRows image
 
+  let rec detectRow row threshold =
+    match row with
+    | [] -> []
+    | pixel::nextPixel::xs -> 
+        [if sqrt (float ((fun (r1, g1, b1) (r2, g2, b2) -> (r2 - r1) * (r2 - r1) + (g2 - g1) * (g2 - g1) + (b2 - b1) * (b2 - b1)) pixel nextPixel)) > float threshold then (0, 0, 0) else (255, 255, 255)] 
+        @ (detectRow (nextPixel::xs) threshold)
+    | [lastPixel] -> [lastPixel]
 
-  
   let rec EdgeDetect (width:int)
                (height:int)
                (depth:int)
                (image:(int*int*int) list list)
                (threshold:int) = 
-    image
+    match image with
+    | [] -> []
+    | row::rest -> [detectRow row threshold] @ (EdgeDetect width height depth rest threshold)
+
 
   // description:
   // rotates an image right 90 degrees
