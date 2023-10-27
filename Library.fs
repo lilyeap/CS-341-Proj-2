@@ -66,7 +66,6 @@ module Operations =
       match img with
       | [] -> []
       | row :: next -> List.rev row :: reverseRows next
-
     reverseRows image
 
 
@@ -78,7 +77,15 @@ module Operations =
                (threshold:int) = 
     image
 
- 
+  // description:
+  // rotates an image right 90 degrees
+
+  // breakdown:
+  // image is passed to a recursive helper function called transpose
+  // in transpose, the head of the list will 
+  // 
+  // the list that is returned from the recursive helper will be passed to a higher order function, List.map
+  // List.map will reverse each row of tuples
   let rec RotateRight90 (width:int)
                         (height:int)
                         (depth:int)
@@ -89,5 +96,6 @@ module Operations =
         | []::_ -> []
         | _ -> (List.map List.head lst) :: transpose (List.map List.tail lst)
     image |> transpose |> List.map List.rev
+    // image |> transpose 
     
 
